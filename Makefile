@@ -1,5 +1,5 @@
 # Use your path
-SKYNET_PATH = $(HOME)/skynet
+SKYNET_PATH = ../../
 TARGET = $(SKYNET_PATH)/cservice/package.so
 
 $(TARGET) : service_package.c
@@ -7,3 +7,6 @@ $(TARGET) : service_package.c
 
 clean :
 	rm $(TARGET)
+install :
+	cp -R lualib ../../
+	cp -R service ../../
