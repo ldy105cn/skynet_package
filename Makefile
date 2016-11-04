@@ -8,5 +8,5 @@ $(TARGET) : service_package.c
 clean :
 	rm $(TARGET)
 install :
-	cp -R lualib ../../
-	cp -R service ../../
+	cp -R lualib $(SKYNET_PATH)
+	cp -R service $(SKYNET_PATH)
