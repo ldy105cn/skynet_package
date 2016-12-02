@@ -319,7 +319,7 @@ message_handler(struct skynet_context * ctx, void *ud, int type, int session, ui
 		break;
 	case PTYPE_RESPONSE:
 		// It's timer
-		heartbeat(ctx, P);
+		// heartbeat(ctx, P);
 		break;
 	case PTYPE_SOCKET:
 		socket_message(ctx, P, msg);
